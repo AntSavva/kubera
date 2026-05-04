@@ -97,11 +97,21 @@
 
           <article class="service-card service-cta">
             <img src="<?php echo kubera_asset('assets/service-cta-bg.png'); ?>" alt="">
-            <div class="service-copy">
-              <h3>Требуется нестандартное изделие?</h3>
-              <p>Опишите задачу, а мы подскажем материал, конструкцию и примерный бюджет.</p>
-              <a class="button" href="#request">Рассчитать стоимость</a>
-            </div>
+            <form class="service-cta-form" action="#" method="post">
+              <h3>Представляем вам по-настоящему надежные, долговечные и невероятно красивые изделия из натуральных пород дерева</h3>
+              <div class="service-cta-fields">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" placeholder="Григорий">
+                </label>
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" placeholder="+7 (981) 887-28-04">
+                </label>
+                <button class="button" type="submit">Записаться на замер</button>
+              </div>
+              <p class="policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+            </form>
           </article>
         </div>
       </section>
